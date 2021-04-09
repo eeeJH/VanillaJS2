@@ -1,0 +1,67 @@
+@import "reset.css";
+
+body {
+  background-color: #fafa3d;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.canvas {
+  margin-top: 30px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* css도 순서가 있다는걸 잊지맙시다. */
+
+.controls {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls .controls__button {
+  margin-bottom: 30px;
+}
+
+.controls__button button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 20px;
+  width: 80px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  color: rgba(10, 10, 10, 0.8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.controls__button button:active {
+  transform: scale(0.95);
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls .js__range {
+}
+
+.controls__colors .controls__color {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
