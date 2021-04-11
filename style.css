@@ -19,7 +19,7 @@ body {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-/* css도 순서가 있다는걸 잊지맙시다. */
+/* css도 순서가 있다는걸 잊으면 안됨. */
 
 .controls {
   margin-top: 30px;
@@ -56,10 +56,8 @@ body {
   display: flex;
 }
 
-.controls .js__range {
-}
-
 .controls__colors .controls__color {
+  margin: 5px;
   width: 50px;
   height: 50px;
   border-radius: 25px;
